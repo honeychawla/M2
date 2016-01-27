@@ -17,7 +17,7 @@ public class Person1 {
 	 * @param pname the person's real name
 	 */
   public Person1(String pname) {
-    name = pname;
+      name = pname;
   }
   	/**
 	 * This method should take the string
@@ -31,7 +31,22 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-	  return null;
+        char[] result = new char[input.length()];
+
+        //Input string is of length 0, 1, or 2
+        if (input.length() == 0 || input.length() == 1 || input.length() == 2) {
+            return input;
+        }
+
+        //Input string is greater than length 2
+        //Move the first letter to the back
+        for (int i = 0, j = 2; j < input.length(); i++, j++) {
+            result[i] = input.charAt(j);
+        }
+        result[input.length() - 2] = input.charAt(0);
+        result[input.length() - 1] = input.charAt(1);
+
+        return new String(result);
 	}
 	
 	/**
@@ -45,5 +60,4 @@ public class Person1 {
 	public String toString(String input) {
 	  return name + calc(input);
 	}
-
 }
