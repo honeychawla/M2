@@ -748,7 +748,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453868431195</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added readme.p2.txt, merged with other commits">
+      <created>1453868639549</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1453868639549</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -796,7 +802,8 @@
     <MESSAGE value="Test again" />
     <MESSAGE value="Removed test messages" />
     <MESSAGE value="Added readme.p2.txt, removed unless file for p2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added readme.p2.txt, removed unless file for p2" />
+    <MESSAGE value="Added readme.p2.txt, merged with other commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added readme.p2.txt, merged with other commits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
