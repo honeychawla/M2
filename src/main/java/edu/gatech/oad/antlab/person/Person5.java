@@ -30,8 +30,18 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 5 put your implementation here
-	  return null;
+		int len = input.length();
+
+		char[] charArray = new char[len];
+
+		charArray[len - 1] = input.charAt(1);
+		charArray[len - 2] = input.charAt(0);
+
+		for (int i = 2; i < len; i++) {
+			charArray[i - 2] = input.charAt(i);
+		}
+
+		return new String(charArray);
 	}
 	
 	/**
