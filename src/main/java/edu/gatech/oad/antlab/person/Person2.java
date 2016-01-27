@@ -54,7 +54,8 @@ public class Person2 {
 	 *         object
 	 */
 	public String toString(String input) {
-	  return name + calc(input);
+        int i = 0;
+        return name + calc(input);
 	}
 
     public static void main(String[] args) {
