@@ -43,6 +43,17 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 	  //Person 3 put your implementation here
-	  return null;
+		if (input == null) {
+			return null;
+		}
+		int size = input.length();
+		String tempName = "";
+		int i = size;
+		while (tempName.length() != size ) {
+			tempName += input.charAt(i-1);
+			i--;
+		}
+		return tempName;
 	}
+
 }
