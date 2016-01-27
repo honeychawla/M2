@@ -54,9 +54,6 @@ public class Person2 {
 	 *         object
 	 */
 	public String toString(String input) {
-        int i = 0;
-        //poop
-
         return name + calc(input);
 	}
 
