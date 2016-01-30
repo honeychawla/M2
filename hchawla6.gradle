@@ -8,10 +8,8 @@ repositories {
 	mavenCentral()
 }
 
-def jdkHome = System.getenv("JAVA_HOME")
-
 dependencies {
-    compile files("$jdkHome/lib/tools.jar")
+    compile files("../../../../../Program Files/Java/jdk1.8.0_65/lib/tools.jar")
     compile files('./lib/resources.jar')
 }
 
