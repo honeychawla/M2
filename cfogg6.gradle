@@ -1,0 +1,25 @@
+defaultTasks 'clean', 'jar'
+
+apply plugin: 'java'
+
+version = '1.0'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+    compile files("../../../../../Program Files/Java/jdk1.8.0_65/lib/tools.jar")
+    compile files('./lib/resources.jar')
+}
+
+jar  {
+	manifest {
+		attributes  'Implementation-Title' : 'Gradle Quickstart' ,
+				'Implementation-Version' : version,
+				'Main-Class' : '/edu/gatech/oad/antlab/pkg1/AntLabMain'
+	}
+
+	destinationDir = file(".")
+	archiveName = 'M2project.jar'
+}
