@@ -11,6 +11,7 @@ dependencies {
             "./lib/resources.jar")
 }
 
+
 jar {
     manifest {
         attributes  'Implementation-Title' : 'Gradle Quickstart' ,
