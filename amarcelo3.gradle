@@ -1,0 +1,22 @@
+defaultTasks 'clean', 'jar'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile files("${System.properties['java.home']}/../lib/tools.jar",
+            "./lib/resources.jar")
+}
+
+jar {
+    manifest {
+        attributes  'Implementation-Title' : 'Gradle Quickstart' ,
+                 'Implementation-Version' : '1.0',
+                 'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+                 'Class-Path' : '../../lib/resources.jar'
+    }
+}
+
